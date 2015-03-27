@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="#">
+    <title>NewsCom</title>
+    <!-- CSS -->
+    <link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../assets/css/style.css" rel="stylesheet">
+		
+	<link rel="stylesheet" href="../../../../assets/css/jquery.datetimepicker.css" />
+    <link rel="stylesheet" href="../../../../assets/css/jquery.scrollbar.css" />
+    <link href="../../../../assets/js/cleditor1.4.5/jquery.cleditor.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="left-container col-lg-4">
+				<a class="logo-link" href="/">
+					<img class="logo-img" src="../../../../assets/images/logo.png"/>
+				</a>
+			</div>
+			<div class="col-md-8">
+				<div class="right-container col-lg-12">
+					<div class="col-sm-6">
+						<!-- profile status -->
+					</div>
+					<div class="top-line col-sm-6 pull-right">
+						<a id="login_link" class="login-link" data-toggle="modal" data-target="#loginModal">Login</a>
+						<a id="register_link" class="register-link" data-toggle="modal" data-target="#registerModal">Register</a>
+						<span id="date_link" class="date-link">19/02/2015 15:42</span>
+						<a id="twitter_link" class="twitter-link">
+							<img src="../../../../assets/images/soc-twitter.png"/>
+						</a>
+						<a id="facebook_link" class="facebook-link">
+							<img src="../../../../assets/images/soc-facebook.png"/>
+						</a>
+						<a id="rss_link" class="rss-link">
+							<img src="../../../../assets/images/soc-rss.png"/>
+						</a>
+					</div>
+					
+				</div>
+				<div class="center-container col-lg-12">
+					<div class="col-lg-5">
+					   <div class="input-group top-search">
+						   <input type="text" class="form-control" placeholder="Search for...">
+						   <span class="input-group-btn">
+							   <button class="btn btn-default btn-search-top" type="button">
+								   <i class="glyphicon glyphicon-search"></i>
+							   </button>
+						   </span>
+					   </div>
+				   </div>
+					<div class="bottom-line col-lg-7">
+						<button class="btn btn-orange btn-sm">Δελτία Τύπου</button>
+						<button class="btn btn-orange btn-sm">Αγγελίες</button>
+						<button class="btn btn-orange btn-sm">Ισολογισμοί</button>
+						<button class="btn btn-orange btn-sm">Εκδηλώσεις</button>
+					</div>
+			   </div>
+				
+			</div>
+		</div>
+	<!-- NAVIGATION MENU -->
+		<div class="navigation-menu">
+			<div class="container">
+				<nav class="navbar navbar-default navbar-first">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav nav-justified">
+                            <li class="active"><a href="index.html">Profile <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Press releases <span class="sr-only"></span></a></li>
+                            <li><a href="#">Events <span class="sr-only"></span></a></li>
+                            <li><a href="#">Balance sheet <span class="sr-only"></span></a></li>
+                            <li><a href="#">Ads <span class="sr-only"></span></a></li>
+                            <li><a href="#">Subsitized programs <span class="sr-only"></span></a></li>
+                        </ul>
+                    </div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- Content -->
+	<section class="content">
+		<div class="container">
+            <!--  bredcrumb -->
+            <ol class="breadcrumb breadcrumb-default">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ol>
+            <nav class="navbar navbar-default navbar-second">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav nav-justified">
+                            <li><a href="index.html">Profile <span class="sr-only"></span></a></li>
+                            <li class="active"><a href="press-release.html">Press releases <span class="sr-only"></span></a></li>
+                            <li><a href="#">Events <span class="sr-only"></span></a></li>
+                            <li><a href="#">Balance sheet <span class="sr-only"></span></a></li>
+                            <li><a href="#">Ads <span class="sr-only"></span></a></li>
+                            <li><a href="#">Subsitized programs <span class="sr-only"></span></a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    <div class="content">
+        <div class="container">
+            <!-- Page header start -->
+            <div class="page-header-blue">
+                <h3 class="page-title">Add press release</h3>
+            </div>
+            <!-- Page header end -->
+			<div class="panel panel-default">
+					<div class="form-horizontal">
+					<!-- Input start -->
+					<div class="form-group row">
+						<label for="inputEmail3" class="col-sm-1 control-label">Title</label>
+						<div class="col-sm-11">
+							<input type="text" class="form-control" id="inputEmail3" placeholder="" value="Release title">
+						</div>
+					</div>
+					<!-- Input end-->
+					<!-- Editor start -->
+					<div class="panel panel-default">
+						   <div class="editor-container">
+								<textarea id="cleditor" name="input"></textarea>
+							</div>
+					</div>
+					<!-- Editor end -->
+					<!-- Input row start -->
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label">Images</label>
+								<div class="col-sm-10 input-container">
+									<input type="text" class="form-control" id="inputEmail3" placeholder="Search..." value="">
+									<button class="upload-logo"><i class="glyphicon glyphicon-plus"></i> Add Logo</button>
+									<a class="input-link add-images-link"> Add more images ></a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label date-label">Start Date</label>
+								<div class='col-sm-10 input-group date' id='datetimepicker_start'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon calendar-blue"></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label">Video</label>
+								<div class="col-sm-10 input-container">
+									<input type="text" class="form-control" id="inputEmail3" placeholder="Paste Video URL..." value="">
+									<a class="input-link add-videos-link"> Add more videos ></a>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputEmail3" class="col-sm-2 control-label date-label">End Date</label>
+								<div class='col-sm-10 input-group date' id='datetimepicker_end'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon calendar-blue"></span>
+								</div>
+							</div>
+						</div>
+				<!-- Input end -->
+				</div>
+			</div>
+            <!-- Action buttons panel start -->
+            <div class="panel panel-default">
+                <div class="action-buttons">
+                    <button type="button" class="btn btn-submit">Submit</button>
+                    <button type="button" class="btn btn-cancel">Cancel</button>
+                </div>
+            </div>
+            <!-- Action buttons panel end -->
+        </div>
+        </div>
+            
+        </div>
+    </div>
+	  </div>
+	</section>
+    <!-- JS libs -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="../../../../assets/js/jquery-1.11.2.js"></script>
+	<script src="../../../../assets/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/cleditor1.4.5/jquery.cleditor.min.js" type="text/javascript"></script>
+	<script src="../../../../assets/js/jquery.datetimepicker.js"></script>
+	<script src="../../../../assets/js/jquery.scrollbar.min.js"></script>
+    <script src="../../../../assets/js/core.js" type="text/javascript"></script>
+</html>

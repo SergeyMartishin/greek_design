@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'OpenSansCondLight';
+    src: url('fonts/OpenSansCondLight.eot');
+    src: url('fonts/OpenSansCondLight.eot') format('embedded-opentype'),
+         url('fonts/OpenSansCondLight.woff2') format('woff2'),
+         url('fonts/OpenSansCondLight.woff') format('woff'),
+         url('fonts/OpenSansCondLight.ttf') format('truetype'),
+         url('fonts/OpenSansCondLight.svg#OpenSansCondLight') format('svg');
+}

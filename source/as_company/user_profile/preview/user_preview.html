@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="#">
+    <title>NewsCom</title>
+    <!-- CSS -->
+    <link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../assets/css/style.css" rel="stylesheet">
+		
+	<link rel="stylesheet" href="../../../../assets/css/jquery.datetimepicker.css" />
+    <link rel="stylesheet" href="../../../../assets/css/jquery.scrollbar.css" />
+    <link href="../../../../assets/js/cleditor1.4.5/jquery.cleditor.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="left-container col-lg-4">
+				<a class="logo-link" href="/">
+					<img class="logo-img" src="../../../../assets/images/logo.png"/>
+				</a>
+			</div>
+			<div class="col-md-8">
+				<div class="right-container col-lg-12">
+					<div class="col-sm-6">
+						<!-- profile status -->
+					</div>
+					<div class="top-line col-sm-6 pull-right">
+						<a id="login_link" class="login-link" data-toggle="modal" data-target="#loginModal">Login</a>
+						<a id="register_link" class="register-link" data-toggle="modal" data-target="#registerModal">Register</a>
+						<span id="date_link" class="date-link">19/02/2015 15:42</span>
+						<a id="twitter_link" class="twitter-link">
+							<img src="../../../../assets/images/soc-twitter.png"/>
+						</a>
+						<a id="facebook_link" class="facebook-link">
+							<img src="../../../../assets/images/soc-facebook.png"/>
+						</a>
+						<a id="rss_link" class="rss-link">
+							<img src="../../../../assets/images/soc-rss.png"/>
+						</a>
+					</div>
+					
+				</div>
+				<div class="center-container col-lg-12">
+					<div class="col-lg-5">
+					   <div class="input-group top-search">
+						   <input disabled="disabled"type="text" class="form-control" placeholder="Search for...">
+						   <span class="input-group-btn">
+							   <button class="btn btn-default btn-search-top" type="button">
+								   <i class="glyphicon glyphicon-search"></i>
+							   </button>
+						   </span>
+					   </div>
+				   </div>
+					<div class="bottom-line col-lg-7">
+						<button class="btn btn-orange btn-sm">Δελτία Τύπου</button>
+						<button class="btn btn-orange btn-sm">Αγγελίες</button>
+						<button class="btn btn-orange btn-sm">Ισολογισμοί</button>
+						<button class="btn btn-orange btn-sm">Εκδηλώσεις</button>
+					</div>
+			   </div>
+				
+			</div>
+		</div>
+	<!-- NAVIGATION MENU -->
+		<div class="navigation-menu">
+			<div class="container">
+				<nav class="navbar navbar-default navbar-first">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav nav-justified">
+                            <li class="active"><a href="index.html">Profile <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Press releases <span class="sr-only"></span></a></li>
+                            <li><a href="#">Events <span class="sr-only"></span></a></li>
+                            <li><a href="#">Balance sheet <span class="sr-only"></span></a></li>
+                            <li><a href="#">Ads <span class="sr-only"></span></a></li>
+                            <li><a href="#">Subsitized programs <span class="sr-only"></span></a></li>
+                        </ul>
+                    </div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- Content -->
+	<section class="content">
+		<div class="container">
+            <!--  bredcrumb -->
+            <ol class="breadcrumb breadcrumb-default">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ol>
+            <nav class="navbar navbar-default navbar-second">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav nav-justified">
+                            <li><a href="index.html">Profile <span class="sr-only"></span></a></li>
+                            <li class="active"><a href="press-release.html">Press releases <span class="sr-only"></span></a></li>
+                            <li><a href="#">Events <span class="sr-only"></span></a></li>
+                            <li><a href="#">Balance sheet <span class="sr-only"></span></a></li>
+                            <li><a href="#">Ads <span class="sr-only"></span></a></li>
+                            <li><a href="#">Subsitized programs <span class="sr-only"></span></a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    <div class="content">
+        <div class="container">
+<!-- Page header start -->
+            <div class="page-header-blue">
+                <h3 class="page-title">User Profile</h3>
+                <span class="edit-action">
+                    <a class="edit-button"><img src="../../../../assets/images/events_edit.png"/></i></a>
+                    Edit
+                </span>
+            </div>
+            <!-- Page header end -->
+            <!-- Personal Details Panel start -->
+            <div class="panel panel-default panel-blue">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Personal Details</h3>
+                </div>
+                <div class="panel-body">
+                    <!-- Porm start-->
+                        <div class="form-horizontal">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Full Name</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="John Goldberg">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Password</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="password" class="form-control" id="inputEmail3" placeholder="" value="123123123">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">User ID</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="email" class="form-control" id="inputEmail3" placeholder="" value="123123123123">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Confirm password</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="password" class="form-control" id="inputEmail3" placeholder="" value="123123123">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    <!-- Form end -->
+                </div>
+            </div>
+            <!-- Personal Details panel end -->
+            <!-- Professional Details start -->
+            <div class="panel panel-default panel-blue">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Professional Details</h3>
+                </div>
+                <div class="panel-body">
+                    <!-- Form start -->
+                        <div class="form-horizontal">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Company Name</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="ASDASDASD">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Business Activity</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="AAA">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Logo</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="logo.png">
+                                            <!--<button class="upload-logo"><i class="glyphicon glyphicon-plus"></i> Add Logo</button>-->
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">VAT</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="erwer">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Tax Office</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="123">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Country</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="password" class="form-control" id="inputEmail3" placeholder="" value="U.S.A.">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">City</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="New York">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Address</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="Abnbn sd df df ">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Zip</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="65000">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Telephone</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="email" class="form-control" id="inputEmail3" placeholder="" value="+ 080 9595">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Mobile</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="+45 4 545 45 454">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Fax</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="" value="3434.565656">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="email" class="form-control" id="inputEmail3" placeholder="" value="aaa@mmm.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Url</label>
+                                    <div class="input-container col-sm-8">
+                                        <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="//34dsd,gfg/dsdfsdf">
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    <!-- Form end -->
+                </div>
+            </div>
+            <!--Professional Details Panel end -->
+            <!-- Google Map start -->
+            <div class="panel panel-default panel-blue">
+                <div id="gmap" class="google-map" style="width: 100%;height: 300px;"></div>
+            </div>
+            <!-- Google map end -->
+            <!-- Description start -->
+            <div class="panel panel-default panel-blue">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Description</h3>
+                </div>
+                <div class="panel-body">
+                   <div class="editor-container">
+                        <textarea id="cleditor" name="input"></textarea>
+                    </div>
+                </div>
+             <div class="panel panel-default">
+                <div class="panel-body">
+                 <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-1 control-label">Keywords</label>
+                            <div class="input-container col-sm-11">
+                                <input disabled="disabled"type="text" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <!-- Description end -->
+            <!-- Action buttons panel start -->
+            <div class="panel panel-default">
+                <div class="action-buttons">
+                    <button type="button" class="btn btn-submit">Submit</button>
+                    <button type="button" class="btn btn-cancel">Cancel</button>
+                </div>
+            </div>
+            <!-- Action buttons panel end -->
+            </div>
+            
+        </div>
+    </div>
+	  </div>
+	</section>
+    <!-- JS libs -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="../../../../assets/js/jquery-1.11.2.js"></script>
+	<script src="../../../../assets/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/cleditor1.4.5/jquery.cleditor.min.js" type="text/javascript"></script>
+	<script src="../../../../assets/js/jquery.datetimepicker.js"></script>
+	<script src="../../../../assets/js/jquery.scrollbar.min.js"></script>
+    <script src="../../../../assets/js/core.js" type="text/javascript"></script>
+</html>

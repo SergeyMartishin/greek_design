@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="#">
+    <title>NewsCom</title>
+    <!-- CSS -->
+    <link href="../../../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../../assets/css/style.css" rel="stylesheet">
+		
+	<link rel="stylesheet" href="../../../../assets/css/jquery.datetimepicker.css" />
+    <link rel="stylesheet" href="../../../../assets/css/jquery.scrollbar.css" />
+    <link href="../../../../assets/js/cleditor1.4.5/jquery.cleditor.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="left-container col-lg-4">
+				<a class="logo-link" href="/">
+					<img class="logo-img" src="../../../../assets/images/logo.png"/>
+				</a>
+			</div>
+			<div class="col-md-8">
+				<div class="right-container col-lg-12">
+					<div class="col-sm-6">
+						<!-- profile status -->
+					</div>
+					<div class="top-line col-sm-6 pull-right">
+						<a id="login_link" class="login-link" data-toggle="modal" data-target="#loginModal">Login</a>
+						<a id="register_link" class="register-link" data-toggle="modal" data-target="#registerModal">Register</a>
+						<span id="date_link" class="date-link">19/02/2015 15:42</span>
+						<a id="twitter_link" class="twitter-link">
+							<img src="../../../../assets/images/soc-twitter.png"/>
+						</a>
+						<a id="facebook_link" class="facebook-link">
+							<img src="../../../../assets/images/soc-facebook.png"/>
+						</a>
+						<a id="rss_link" class="rss-link">
+							<img src="../../../../assets/images/soc-rss.png"/>
+						</a>
+					</div>
+					
+				</div>
+				<div class="center-container col-lg-12">
+					<div class="col-lg-5">
+					   <div class="input-group top-search">
+						   <input type="text" class="form-control" placeholder="Search for...">
+						   <span class="input-group-btn">
+							   <button class="btn btn-default btn-search-top" type="button">
+								   <i class="glyphicon glyphicon-search"></i>
+							   </button>
+						   </span>
+					   </div>
+				   </div>
+					<div class="bottom-line col-lg-7">
+						<button class="btn btn-orange btn-sm">Δελτία Τύπου</button>
+						<button class="btn btn-orange btn-sm">Αγγελίες</button>
+						<button class="btn btn-orange btn-sm">Ισολογισμοί</button>
+						<button class="btn btn-orange btn-sm">Εκδηλώσεις</button>
+					</div>
+			   </div>
+				
+			</div>
+		</div>
+	<!-- NAVIGATION MENU -->
+		<div class="navigation-menu">
+			<div class="container">
+				<nav class="navbar navbar-default navbar-first">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav nav-justified">
+                            <li class="active"><a href="index.html">Profile <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Press releases <span class="sr-only"></span></a></li>
+                            <li><a href="#">Events <span class="sr-only"></span></a></li>
+                            <li><a href="#">Balance sheet <span class="sr-only"></span></a></li>
+                            <li><a href="#">Ads <span class="sr-only"></span></a></li>
+                            <li><a href="#">Subsitized programs <span class="sr-only"></span></a></li>
+                        </ul>
+                    </div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!-- Content -->
+	<section class="content">
+		<div class="container">
+            <!--  bredcrumb -->
+            <ol class="breadcrumb breadcrumb-default">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
+                <li class="active">Data</li>
+            </ol>
+            <nav class="navbar navbar-default navbar-second">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                         </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav nav-justified">
+                            <li><a href="index.html">Profile <span class="sr-only"></span></a></li>
+                            <li class="active"><a href="press-release.html">Press releases <span class="sr-only"></span></a></li>
+                            <li><a href="#">Events <span class="sr-only"></span></a></li>
+                            <li><a href="#">Balance sheet <span class="sr-only"></span></a></li>
+                            <li><a href="#">Ads <span class="sr-only"></span></a></li>
+                            <li><a href="#">Subsitized programs <span class="sr-only"></span></a></li>
+                        </ul>
+                    </div>
+            </nav>
+        </div>
+    <div class="content">
+        <div class="container">
+            <!-- page header -->
+            <div class="page-header-blue">
+                <h3 class="page-title">Packages</h3>
+                <span class="edit-action">
+                    <a class="edit-button"><img src="../../../../assets/images/events_delete.png"/></a>
+                    Delete
+                </span>
+                <span class="edit-action">
+                    <a class="edit-button"><img src="../../../../assets/images/events_preview.png"/></a>
+                    Preview
+                </span>
+                <span class="edit-action">
+                    <a class="edit-button"><img src="../../../../assets/images/events_edit.png"/></i></a>
+                    Edit
+                </span>
+                <span class="edit-action">
+                    <a class="edit-button"><img src="../../../../assets/images/events_add.png"/></i></a>
+                    Add
+                </span>
+            </div>
+            <!-- /page header -->
+            <div class="panel">
+                <div class="panel-body">
+                    <div class="col-md-4">
+                        <div class="group">
+                            <div class='col-sm-9 input-group search-input'>
+								<span class="input-group-addon addon-left search"></span>
+                                <input type='text' class="form-control" placeholder="Live Search"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">End Date</label>
+                            <div class='col-sm-9 input-group date' id='datetimepicker_end'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon calendar-blue"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">Time</label>
+                            <div class='col-sm-9 input-group date' id='datetimepicker_time'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon calendar-blue"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-search pull-right">Search</button>
+                    </div>
+                </div>
+            </div>
+			<div class="columns row">
+                <div class="panel">
+                    <div class="panel-body">
+                        <!-- table content -->
+                            <table class="table table-bordered table-orange">
+								<thead>
+									<tr>
+										<td></td>
+										<td>ID <a class="btn-rounded"><i class="glyphicon glyphicon-triangle-bottom"></i></a></td>
+										<td>Date <a class="btn-rounded"><i class="glyphicon glyphicon-triangle-bottom"></i></a></td>
+										<td>Title</td>
+										<td></td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td style="text-align:center"><input type="checkbox"/></td>
+										<td>EV11557
+										</td>
+										<td>20/01/15
+										</td>
+										<td>Title is go here and it is not Lorem Ipsum</td>
+										<td style="text-align:center">
+											<a class="pdf"></a>
+											<a class="print"></a>
+										</td>
+									</tr>
+									<tr>
+										<td style="text-align:center"><input type="checkbox"/></td>
+										<td>EV11557
+										</td>
+										<td>20/01/15
+										</td>
+										<td>Title is go here and it is not Lorem Ipsum</td>
+										<td style="text-align:center">
+											<a class="pdf"></a>
+											<a class="print"></a>
+										</td>
+									</tr>
+									<tr>
+										<td style="text-align:center"><input type="checkbox"/></td>
+										<td>EV11557
+										</td>
+										<td>20/01/15
+										</td>
+										<td>Title is go here and it is not Lorem Ipsum</td>
+										<td style="text-align:center">
+											<a class="pdf"></a>
+											<a class="print"></a>
+										</td>
+									</tr>
+									<tr>
+										<td style="text-align:center"><input type="checkbox"/></td>
+										<td>EV11557
+										</td>
+										<td>20/01/15
+										</td>
+										<td>Title is go here and it is not Lorem Ipsum</td>
+										<td style="text-align:center">
+											<a class="pdf"></a>
+											<a class="print"></a>
+										</td>
+									</tr>
+									<tr>
+										<td style="text-align:center"><input type="checkbox"/></td>
+										<td>EV11557
+										</td>
+										<td>20/01/15
+										</td>
+										<td>Title is go here and it is not Lorem Ipsum</td>
+										<td style="text-align:center">
+											<a class="pdf"></a>
+											<a class="print"></a>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+                        <!-- /table content -->
+                    </div>
+                </div>
+				<div class="panel">
+					<div class="panel-default">
+						<nav>
+							<ul class="pagination pagination-default">
+							  <li>
+								<a href="#" aria-label="Previous">
+								  <span aria-hidden="true">Prevoius</span>
+								</a>
+							  </li>
+							  <li><a href="#">11</a></li>
+							  <li><a href="#">12</a></li>
+							  <li><a href="#">13</a></li>
+							  <li><a href="#">14</a></li>
+							  <li><a href="#">...</a></li>
+							  <li><a href="#">25</a></li>
+							  <li><a href="#">26</a></li>
+							  <li><a href="#">27</a></li>
+							  <li>
+								<a href="#" aria-label="Next">
+								  <span aria-hidden="true">Next</span>
+								</a>
+							  </li>
+							</ul>
+						  </nav>
+					  </div>
+				</div>
+			</div>	
+		</div>
+            
+        </div>
+    </div>
+	  </div>
+	</section>
+    <!-- JS libs -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="../../../../assets/js/jquery-1.11.2.js"></script>
+	<script src="../../../../assets/js/bootstrap.min.js"></script>
+    <script src="../../../../assets/js/cleditor1.4.5/jquery.cleditor.min.js" type="text/javascript"></script>
+	<script src="../../../../assets/js/jquery.datetimepicker.js"></script>
+	<script src="../../../../assets/js/jquery.scrollbar.min.js"></script>
+    <script src="../../../../assets/js/core.js" type="text/javascript"></script>
+</html>
